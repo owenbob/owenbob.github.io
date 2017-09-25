@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/style.css" >
 
-    <title>Login Page</title>
+    <title>Register Page</title>
   </head>
   <body style="background-color:white;">
     <header>
@@ -21,7 +21,7 @@
                       <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top " alt="">
                       Yummy Recipes
                       </a>
-                      <a  class="nav-item nav-link text" href="register.html"> Register</a>
+                      <a  class="nav-item nav-link text" href="index.html"> SignIn</a>
                     </nav> 
                   </div>      
               </div>  
@@ -33,27 +33,44 @@
                       <div class="jumbotron" style="background-color:#A6F4DC;">
                           <h1 class="display-5 align">Welcome To Yummy Recipes</h1>
                           <hr class="my-4">
-                          <p class="align">An easy application to create,update, view and even share recipes  with friends.Register today to enjoy the experience!</p>
+                          <p class="align"> Please Register below to enjoy the experience!</p>
                           <hr class="my-4">
 
                           <div class="container center">
                           <div class=col-10 >
-                          <form>
-                              <div class="form-group row"style="align:center;">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-10">
-                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                <div class="col-sm-10">
-                                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                                </div>
-                              </div>
-                              <div class="form-group row">
-                                <div class="offset-sm-2 col-sm-10">
-                                  <button type="submit" class="btn btn-info">Sign in</button>
+                          
+                            <!-- User name input-->
+                    <div class="form-group">
+                            <label class="control-label" for="username">Username</label>
+                            <div class="col">
+                                <input type="text" class="form-control" id="username" required>
+                            </div><!--column-->
+                        </div><!--form group-->
+    
+                        <!-- Email input-->
+                        <div class="form-group">
+                            <label class="control-label align-content-around" for="email">Email</label>
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" required>
+                            </div><!--column-->
+                        </div><!--form group-->
+    
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="control-label align-content-around" for="password">Password</label>
+                            <div class="col">
+                                <input type="password" class="form-control" id="password" required>
+                            </div><!--column-->
+                        </div><!--form group-->
+    
+                        <!-- Sign Up button-->
+                        <div class="form-group text-center">
+                            <button class="btn btn-info btn-block" type="submit">Sign me Up!</button>
+    
+                            <p class="align-content-center">Already have an account? 
+                                <a href="login.html"> Log In </a>
+                            </p>
+                        </div><!--form group-->
                                 </div>
                               </div>
                             </form>
